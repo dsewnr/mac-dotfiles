@@ -1,4 +1,5 @@
 set -U autovenv_enable yes
+set -gx LDFLAGS "-L/usr/local/opt/libffi/lib"
 
 alias vim="nvim"
 alias venv="source venv/bin/activate.fish"
