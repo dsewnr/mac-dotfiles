@@ -93,7 +93,7 @@ Plug 'ap/vim-buftabline'
 Plug 'itchyny/lightline.vim'
 set laststatus=2
 let g:lightline = {
-      \ 'colorscheme': 'Tomorrow_Night_Eighties',
+      \ 'colorscheme': 'iceberg',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'cocstatus', 'readonly', 'filename', 'modified' ] ]
