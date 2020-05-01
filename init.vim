@@ -4,6 +4,7 @@
 call plug#begin('~/.vim/plugged')
 
 " On-demand loading
+Plug 'cocopon/iceberg.vim'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'preservim/nerdcommenter'
 let g:NERDSpaceDelims = 1
@@ -16,6 +17,7 @@ let g:NERDTrimTrailingWhitespace = 1
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'majutsushi/tagbar'
+Plug 'tpope/vim-fugitive'
 
 nmap <C-c> :.w !pbcopy<CR><CR>
 vmap <C-c> :w !pbcopy<CR><CR>
@@ -280,14 +282,19 @@ Plug 'tpope/vim-repeat'
 
 Plug 'airblade/vim-gitgutter'
 let g:gitgutter_highlight_lines = 0
+let g:gitgutter_max_signs = 9999
 nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
 
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-unimpaired'
 
+" Initialize plugin system
+call plug#end()
+
 " My preference setup
 syntax on
+colorscheme iceberg
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -302,6 +309,7 @@ set lazyredraw
 set backspace=2
 set backspace=indent,eol,start
 set encoding=UTF-8
+set splitbelow splitright
 
 highlight Normal ctermfg=grey ctermbg=black
 highlight MatchTag ctermfg=black ctermbg=Yellow guifg=black guibg=Yellow
@@ -310,6 +318,3 @@ highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
 filetype plugin on
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2                                                   
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
-
-" Initialize plugin system
-call plug#end()
