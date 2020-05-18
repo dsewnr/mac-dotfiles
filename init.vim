@@ -310,6 +310,8 @@ set backspace=2
 set backspace=indent,eol,start
 set encoding=UTF-8
 set splitbelow splitright
+" set spell spelllang=en
+" set spellfile=$HOME/Google\ Drive/Me/Vim/spell/en.utf-8.add
 
 highlight Normal ctermfg=grey ctermbg=black
 highlight MatchTag ctermfg=black ctermbg=Yellow guifg=black guibg=Yellow

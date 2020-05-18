@@ -5,6 +5,7 @@ set -x EDITOR vim
 
 alias vim="nvim"
 alias venv="source venv/bin/activate.fish"
+alias gpg_restart="killall gpg-agent && gpg-agent --daemon --use-standard-socket --pinentry-program /usr/local/bin/pinentry"
 
 [ -f /usr/local/share/autojump/autojump.fish ];
 
