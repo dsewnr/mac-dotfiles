@@ -219,6 +219,10 @@ omap af <Plug>(coc-funcobj-a)
 " Use <TAB> for select selections ranges, needs server support, like: coc-tsserver, coc-python
 nmap <silent> <TAB> <Plug>(coc-range-select)
 xmap <silent> <TAB> <Plug>(coc-range-select)
+xmap <silent> <S-TAB> <Plug>(coc-range-select-backword)
+
+" jump backword
+nnoremap <C-l> <C-i>
 
 " Use `:Format` to format current buffer
 command! -nargs=0 Format :call CocAction('format')
