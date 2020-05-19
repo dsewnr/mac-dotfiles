@@ -221,8 +221,8 @@ nmap <silent> <TAB> <Plug>(coc-range-select)
 xmap <silent> <TAB> <Plug>(coc-range-select)
 xmap <silent> <S-TAB> <Plug>(coc-range-select-backword)
 
-" jump backword
-nnoremap <C-l> <C-i>
+" for jump backword
+unmap <C-i>
 
 " Use `:Format` to format current buffer
 command! -nargs=0 Format :call CocAction('format')
