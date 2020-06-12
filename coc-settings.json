@@ -4,5 +4,6 @@
     "python.linting.pylintEnabled": true,
     "python.formatting.provider":"autopep8",
     "python.formatting.autopep8Args": ["--max-line-length", "79", "--experimental"],
-    "python.venvPath": "venv/bin/python"
+    "python.venvPath": "venv/bin/python",
+    "tsserver.npm": "/usr/local/bin/npm"
 }
