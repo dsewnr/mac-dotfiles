@@ -11,5 +11,10 @@ alias gpg_restart="killall gpg-agent && gpg-agent --daemon --use-standard-socket
 [ -f /usr/local/share/autojump/autojump.fish ];
 
 fish_ssh_agent
-set -g fish_user_paths "/usr/local/opt/openjdk/bin" $fish_user_paths
+set -x PATH /usr/local/opt/openjdk/bin ~/bin $PATH
+source $HOME/.cargo/env
 fish_vi_key_bindings
+
+function nvm
+    bass source /usr/local/opt/nvm/nvm.sh --no-use ';' nvm $argv
+end

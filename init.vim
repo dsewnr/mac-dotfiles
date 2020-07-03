@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
 
 " On-demand loading
 Plug 'cocopon/iceberg.vim'
+Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'preservim/nerdcommenter'
 let g:NERDSpaceDelims = 1
