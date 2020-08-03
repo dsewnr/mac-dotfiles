@@ -2,6 +2,7 @@
 
 dotfiles=(
 ~/.tmux.conf
+~/.alacritty.yml
 ~/.config/fish/config.fish
 ~/.config/nvim/init.vim
 ~/.config/nvim/coc-settings.json
