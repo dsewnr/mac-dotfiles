@@ -19,6 +19,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'easymotion/vim-easymotion'
 
 nmap <C-c> :.w !pbcopy<CR><CR>
 vmap <C-c> :w !pbcopy<CR><CR>
