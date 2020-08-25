@@ -53,7 +53,7 @@ Plug 'junegunn/fzf.vim'
 let g:fzf_command_prefix = 'Fzf'
 nnoremap <C-b> :FzfBuffers<CR>
 nnoremap <C-p> :FzfFiles<CR>
-nnoremap <C-a> :FzfAg<CR>
+" nnoremap <C-a> :FzfAg<CR>
 " nnoremap <C-c> :FzfCommands<CR>
 " nnoremap <leader><leader> :FzfCommands<CR>
 nnoremap <C-g> :call FzfOmniFiles()<CR>
