@@ -4,7 +4,9 @@
 call plug#begin('~/.vim/plugged')
 
 " On-demand loading
-Plug 'cocopon/iceberg.vim'
+Plug 'KeitaNakamura/neodark.vim'
+let g:neodark#background = '#202020'
+let g:neodark#use_256color = 1
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'preservim/nerdcommenter'
@@ -96,7 +98,7 @@ Plug 'ap/vim-buftabline'
 Plug 'itchyny/lightline.vim'
 set laststatus=2
 let g:lightline = {
-      \ 'colorscheme': 'iceberg',
+      \ 'colorscheme': 'neodark',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'cocstatus', 'readonly', 'filename', 'modified' ] ]
@@ -303,7 +305,7 @@ call plug#end()
 
 " My preference setup
 syntax on
-colorscheme iceberg
+colorscheme neodark
 set tabstop=4
 set shiftwidth=4
 set expandtab
