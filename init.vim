@@ -300,6 +300,8 @@ nmap [h <Plug>(GitGutterPrevHunk)
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-unimpaired'
 
+Plug 'chr4/nginx.vim'
+
 " Initialize plugin system
 call plug#end()
 

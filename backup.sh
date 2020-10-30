@@ -7,6 +7,7 @@ dotfiles=(
 ~/.config/nvim/init.vim
 ~/.config/nvim/coc-settings.json
 ~/.config/tig/tig.tigrc
+~/.gitconfig
 )
 
 for ((i=0; i<${#dotfiles[@]}; i++)); do

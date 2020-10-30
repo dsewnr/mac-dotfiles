@@ -1,0 +1,26 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Peter BR Lu
+	email = peter_br_lu@trendmicro.com
+	signingkey = A057F1DB9052B13DEF454D5CDC1F7A899679A3F5
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/bin/gpg
+[core]
+    pager = delta --dark --plus-color="#012800" --minus-color="#340001" --theme='TwoDark'
+[alias]
+	co = checkout
+	br = branch
+	st = status
+	l = log --oneline --graph
+	ls = log --graph --pretty=format:\"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset\" --abbrev-commit
+    la = log --oneline --graph --decorate --all
+[pull]
+	rebase = false
+[merge]
+	tool = vimdiff
