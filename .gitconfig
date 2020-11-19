@@ -13,6 +13,7 @@
 	program = /usr/local/bin/gpg
 [core]
     pager = delta --dark --plus-color="#012800" --minus-color="#340001" --theme='TwoDark'
+	excludesfile = /Users/peter_br_lu/.gitignore_global
 [alias]
 	co = checkout
 	br = branch
