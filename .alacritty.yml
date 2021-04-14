@@ -381,7 +381,7 @@ cursor:
   #thickness: 0.15
 
 # Live config reload (changes require restart)
-live_config_reload: true
+#live_config_reload: true
 
 # Shell
 #
@@ -729,4 +729,4 @@ live_config_reload: true
   #log_level: Warn
 
   # Print all received window events.
-  #print_events: false
+  #print_events: true

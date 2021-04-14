@@ -6,7 +6,7 @@ call plug#begin('~/.vim/plugged')
 " On-demand loading
 Plug 'KeitaNakamura/neodark.vim'
 let g:neodark#background = '#202020'
-let g:neodark#use_256color = 1
+" let g:neodark#use_256color = 1
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'preservim/nerdcommenter'
@@ -26,6 +26,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'luochen1990/rainbow'
 let g:rainbow_active = 1
 Plug 'Yggdroot/indentLine'
+Plug 'diepm/vim-rest-console'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 nmap <C-c> :.w !pbcopy<CR><CR>
 vmap <C-c> :w !pbcopy<CR><CR>
@@ -306,12 +308,17 @@ Plug 'tpope/vim-unimpaired'
 Plug 'chr4/nginx.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
+" Golang
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+let g:go_fmt_command = "goimports"
+
 " Initialize plugin system
 call plug#end()
 
 " My preference setup
 syntax on
 colorscheme neodark
+set termguicolors
 set tabstop=4
 set shiftwidth=4
 set expandtab

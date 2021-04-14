@@ -1,14 +1,10 @@
 {
   "java.home": "/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home",
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
-  "python.formatting.provider": "autopep8",
   "python.formatting.autopep8Args": [
     "--max-line-length",
     "79",
     "--experimental"
   ],
-  "python.venvPath": "venv/bin/python",
   "tsserver.npm": "/usr/local/bin/npm",
   "languageserver": {
     "terraform": {
@@ -18,5 +14,10 @@
       "initializationOptions": {},
       "settings": {}
     }
-  }
+  },
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+  "coc.preferences.formatOnSaveFiletypes": ["rust"]
 }
