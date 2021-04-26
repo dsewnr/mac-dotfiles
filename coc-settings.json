@@ -1,10 +1,5 @@
 {
   "java.home": "/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home",
-  "python.formatting.autopep8Args": [
-    "--max-line-length",
-    "79",
-    "--experimental"
-  ],
   "tsserver.npm": "/usr/local/bin/npm",
   "languageserver": {
     "terraform": {

@@ -8,6 +8,7 @@ Plug 'KeitaNakamura/neodark.vim'
 let g:neodark#background = '#202020'
 " let g:neodark#use_256color = 1
 Plug 'ryanoasis/vim-devicons'
+Plug 'kyazdani42/nvim-web-devicons'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'preservim/nerdcommenter'
 let g:NERDSpaceDelims = 1
@@ -28,6 +29,7 @@ let g:rainbow_active = 1
 Plug 'Yggdroot/indentLine'
 Plug 'diepm/vim-rest-console'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter-refactor'
 
 nmap <C-c> :.w !pbcopy<CR><CR>
 vmap <C-c> :w !pbcopy<CR><CR>
@@ -99,7 +101,7 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
-Plug 'ap/vim-buftabline'
+Plug 'romgrk/barbar.nvim'
 Plug 'itchyny/lightline.vim'
 set laststatus=2
 let g:lightline = {
@@ -342,5 +344,5 @@ highlight MatchTag ctermfg=black ctermbg=Yellow guifg=black guibg=Yellow
 highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
 
 filetype plugin on
-autocmd FileType javascript setlocal shiftwidth=2 tabstop=2                                                   
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
