@@ -266,7 +266,8 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " Grep
-nnoremap <silent> <space>g  :<C-u>CocList grep<cr>
+" nnoremap <silent> <space>g  :<C-u>CocList grep<cr>
+nnoremap <silent> <space>g  :<C-u>FzfAg<cr>
 
 " tags
 Plug 'ludovicchabant/vim-gutentags'
@@ -329,7 +330,7 @@ set hlsearch
 set relativenumber
 set nu
 set re=1
-set cc=80
+set cc=120
 set ttyfast
 set lazyredraw
 set backspace=2
